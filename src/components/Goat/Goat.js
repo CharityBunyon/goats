@@ -1,10 +1,13 @@
 import React from 'react';
-
+import goatShape from '../../helpers/propz/goatShape';
 
 class Goat extends React.Component {
+  static propTypes = {
+    goat: goatShape.goatShape,
+  }
+
   render() {
     const { goat } = this.props;
-
     return (
       <div className="card">
         <img className="card-img-top" src={goat.imgUrl} alt="Card cap"/>
