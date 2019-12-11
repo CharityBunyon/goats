@@ -23,14 +23,14 @@ class Goat extends React.Component {
   render() {
     const { goat } = this.props;
     return (
-      <div className="card">
+      <div className="container">
         <img className="card-img-top" src={goat.imgUrl} alt="Card cap"/>
-        <div className="card-body">
+        <div className=" card card-body">
           <h5 className="card-title">{goat.name}</h5>
           <p className="card-text">{goat.age}</p>
           <p className="card-text">{goat.description}</p>
-          <div className="btn" onClick={this.freeGoatEvent}>Free Me</div>
-          <div className="btn" onClick={this.useGoatEvent}>Use Me</div>
+          <button className="btn btn-primary" onClick={this.freeGoatEvent}>Free Me</button>
+          <button className="btn btn-primary" onClick={this.useGoatEvent}>Use Me</button>
         </div>
       </div>
     );
