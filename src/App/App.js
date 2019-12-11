@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 import goatData from '../helpers/data/goatData';
 import GoatCoral from '../components/GoatCoral/GoatCoral';
+import GoatAvail from '../components/GoatAvail/GoatAvail';
 
 class App extends React.Component {
   state = {
@@ -28,7 +29,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <button className="btn btn-danger">Bootstrap Button</button>
+        <h1>Underwater Goat Yoga</h1>
+        <GoatAvail goats={this.state.goats} />
         <GoatCoral butts={this.state.goats} freeGoat={this.freeGoat} useGoat={this.useGoat}/>
       </div>
     );

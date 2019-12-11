@@ -7,6 +7,7 @@ class GoatCoral extends React.Component {
   static propTypes = {
     butts: PropTypes.arrayOf(goatShape.goatShape),
     freeGoat: PropTypes.func,
+    useGoat: PropTypes.func,
   }
 
   render() {
