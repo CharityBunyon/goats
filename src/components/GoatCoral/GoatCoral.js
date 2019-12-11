@@ -12,8 +12,9 @@ class GoatCoral extends React.Component {
   render() {
     const myGoats = this.props.butts;
     const { freeGoat } = this.props;
+    const { useGoat } = this.props;
 
-    const goatCards = myGoats.map((goat) => <Goat key={goat.id} goat={goat} freeGoat={freeGoat} />);
+    const goatCards = myGoats.map((goat) => <Goat key={goat.id} goat={goat} freeGoat={freeGoat} useGoat={useGoat} />);
 
     return (
       <div className="goatCoral">
